@@ -19,6 +19,11 @@ MONGO_INITDB_ROOT_PASSWORD=MyPassword
 
 This file's variables will be used by docker-compose and our API for MongoDB database authentication.
 
+## Running the app
+1. Open docker and make sure it's running
+2. In the root of the project, run `docker-compose up`. This should spin up the mongoDB server + add seed data. You can use `docker-compose up -d` to run it in dettached mode, in the background.
+3. If the `-d` flag was not used, open a new terminal. Otherwise, in the same terminal `cd` into the `api` directory and build the app routes using `npm run build`.
+4. Run the api server with `npm run start`
 
 
 # Running tests
