@@ -1,0 +1,2 @@
+mongoimport --authenticationDatabase=admin --uri "mongodb://$MONGO_INITDB_ROOT_USERNAME:$MONGO_INITDB_ROOT_PASSWORD@mongo:27017" --collection sprockets --type json --file /mongo-seed/sprockets.json --jsonArray --mode=upsert
+mongoimport --authenticationDatabase=admin --uri "mongodb://$MONGO_INITDB_ROOT_USERNAME:$MONGO_INITDB_ROOT_PASSWORD@mongo:27017" --collection factories --type json --file /mongo-seed/factories.json --jsonArray --mode=upsert

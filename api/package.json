@@ -6,12 +6,13 @@
     "scripts": {
         "build": "tsoa spec-and-routes && tsc",
         "start": "nodemon",
-        "test": "jest sprockets/controller.test.ts --forceExit"
+        "test": "jest --runInBand --forceExit"
     },
     "author": "Bruno Gallo",
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
         "express": "^4.19.2",
         "mongodb": "^6.8.0",
         "tsoa": "^6.3.1"

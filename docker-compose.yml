@@ -1,0 +1,20 @@
+services:
+    mongo:
+        container_name: dev-db
+        image: mongo:latest
+        restart: unless-stopped
+        env_file: ./api/.env
+        ports:
+            - "27017:27017"
+        volumes:
+            - ./data:/data/db
+    mongo_seed:
+        image: mongo:latest
+        links:
+            - mongo
+        volumes:
+            - ./mongo-seed:/mongo-seed
+        env_file: ./api/.env
+        command: /mongo-seed/import.sh
+volumes:
+    mongo-data:

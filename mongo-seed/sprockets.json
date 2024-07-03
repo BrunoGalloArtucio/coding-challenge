@@ -1,0 +1,23 @@
+[
+    {
+        "_id": { "$oid": "6685a1dec2d49b0dd1a9b99a" },
+        "teeth": 5,
+        "pitch_diameter": 5,
+        "outside_diameter": 6,
+        "pitch": 1
+    },
+    {
+        "_id": { "$oid": "6685a1dec2d49b0dd1a9b99b" },
+        "teeth": 5,
+        "pitch_diameter": 5,
+        "outside_diameter": 6,
+        "pitch": 1
+    },
+    {
+        "_id": { "$oid": "6685a1dec2d49b0dd1a9b99c" },
+        "teeth": 5,
+        "pitch_diameter": 5,
+        "outside_diameter": 6,
+        "pitch": 1
+    }
+]

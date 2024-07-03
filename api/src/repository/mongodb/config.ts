@@ -5,6 +5,6 @@ export const collections = {
     sprockets: "sprockets",
 };
 
-const connectionUri = "mongodb://BrunoGallo:Pa55W0RD@localhost:27017";
+const connectionUri = `mongodb://${process.env.MONGO_INITDB_ROOT_USERNAME}:${process.env.MONGO_INITDB_ROOT_PASSWORD}@localhost:27017`;
 
 export const mongoClient = new MongoClient(connectionUri);

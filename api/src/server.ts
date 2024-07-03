@@ -1,4 +1,4 @@
-// src/server.ts
+import "dotenv/config";
 import { buildApp } from "./app";
 
 const port = process.env.PORT || 8081;
