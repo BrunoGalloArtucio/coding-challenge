@@ -1,0 +1,6 @@
+{
+    "watch": ["src/**/*.ts", "package.json", "tsconfig.json", "tsoa.json"],
+    "ext": "ts",
+    "exec": "ts-node src/server.ts",
+    "delay": 500
+}
