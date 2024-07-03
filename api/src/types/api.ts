@@ -1,6 +1,3 @@
-/**
- * An RFC-8707 error describing a 4XX/5XX response from the server.
- */
 export class ApiError extends Error {
     /**
      * A human-readable title.

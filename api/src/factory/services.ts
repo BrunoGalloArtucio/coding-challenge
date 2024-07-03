@@ -2,8 +2,9 @@ import { IFactoryRepository } from "../repository/IRepository";
 import { ItemNotFoundError } from "../repository/error";
 import { ApiError } from "../types/api";
 
-export function getFactories(factoriesRepository: IFactoryRepository) {
-    return factoriesRepository.getAll();
+export async function getFactories(factoriesRepository: IFactoryRepository) {
+    const factories = await factoriesRepository.getAll();
+    return factories;
 }
 
 export async function getFactoryById(

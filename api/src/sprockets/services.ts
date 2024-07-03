@@ -18,11 +18,12 @@ export async function getSprocketById(
     }
 }
 
-export function createSprocket(
+export async function createSprocket(
     sprocketRepository: ISprocketRepository,
-    sprocket: SprocketData
+    sprocketData: SprocketData
 ) {
-    return sprocketRepository.createSprocket(sprocket);
+    const sprocket = await sprocketRepository.createSprocket(sprocketData);
+    return sprocket;
 }
 
 export async function updateSprocket(
