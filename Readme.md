@@ -1,4 +1,4 @@
-# Powerflex Coding Challenge
+# Coding Challenge
 
 # Installation
 
